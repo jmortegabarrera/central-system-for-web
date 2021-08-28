@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'crud-test'`, () => {
+  it(`should have as title 'central-system-for-web'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('crud-test');
+    expect(app.title).toEqual('central-system-for-web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('crud-test app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('central-system-for-web app is running!');
   });
 });

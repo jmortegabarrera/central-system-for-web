@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crud-test": {
+    "central-system-for-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crud-test",
+            "outputPath": "dist/central-system-for-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "crud-test:build"
+            "browserTarget": "central-system-for-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "crud-test:build:production"
+              "browserTarget": "central-system-for-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "crud-test:build"
+            "browserTarget": "central-system-for-web:build"
           }
         },
         "test": {
@@ -115,15 +115,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "crud-test:serve"
+            "devServerTarget": "central-system-for-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "crud-test:serve:production"
+              "devServerTarget": "central-system-for-web:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "crud-test"
+    }
+  },
+  "defaultProject": "central-system-for-web",
+  "cli": {
+    "analytics": "2dfc1dbb-c6fa-442f-8452-86e350859054"
+  }
 }
